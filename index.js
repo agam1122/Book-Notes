@@ -65,7 +65,7 @@ app.post("/add_book", async (req, res) => {
   const date = new Date().toISOString().split("T")[0];
 
   const insertResult = await db.query(
-    "INSERT INTO books (book_title, author, date_read, rating, cover_url, notes) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING id",
+    "INSERT INTO books (book_title, author, date_read, rating, cover_url, notes, summary) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING id",
     [finalTitle, finalAuthor, date, rating, image, notes, summary]
   );
   res.redirect("/add_book");
