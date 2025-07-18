@@ -1,0 +1,74 @@
+body {
+      background-color: #F5F7FA;
+      color: #333;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    h1 {
+      color: #6C63FF;
+      font-weight: 700;
+    }
+
+    .btn-primary {
+      background-color: #6C63FF;
+      border-color: #6C63FF;
+    }
+
+    .btn-primary:hover {
+      background-color: #5953d8;
+      border-color: #5953d8;
+    }
+
+    .btn-dark {
+      background-color: #333;
+      border: none;
+    }
+
+    .card {
+      border: none;
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    }
+
+    .book-cover {
+      width: 100%;
+      height: auto;
+      max-height: 350px;
+      object-fit: contain;
+      border-radius: 0;
+      background-color: #f0f0f0;
+    }
+
+    .book-notes {
+      white-space: pre-wrap;
+    }
+
+    .text-warning {
+      color: #ffae42 !important;
+    }
+
+    /* Dark Mode Support */
+    .dark-mode {
+      background-color: #1e1e2f !important;
+      color: #f0f0f0 !important;
+    }
+
+    .dark-mode .card {
+      background-color: #2b2b3c !important;
+      color: #f0f0f0 !important;
+    }
+
+    .dark-mode .btn-dark {
+      background-color: #f0f0f0;
+      color: #1e1e2f;
+    }
+
+    .dark-mode .btn-primary {
+      background-color: #817cfc;
+    }
