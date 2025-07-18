@@ -45,7 +45,7 @@ app.get("/", async (req, res) => {
     const result = await db.query("SELECT * FROM books");
     const books = result.rows;
 
-    console.log(books);
+    // console.log(books);
     res.render("index.ejs", { books });
   } catch (err) {
     console.error("Error executing query", err);
