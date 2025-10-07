@@ -4,11 +4,10 @@ import axios from "axios";
 import pg from "pg";
 
 const db = new pg.Client({
-  user: "postgres",
-  host: "localhost",
-  database: "book notes",
-  password: "123456",
-  port: 5434,
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false,
+  },
 });
 
 db.connect();
